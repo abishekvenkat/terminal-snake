@@ -72,7 +72,7 @@ Q : Quit game
 - Performance may vary based on terminal emulator
 
 ## License
-MIT License - see [LICENSE](\LICENSE) file for details
+MIT License - see [LICENSE](/LICENSE) file for details
 
 ## Acknowledgments
 - Inspired by the classic Nokia Snake game
