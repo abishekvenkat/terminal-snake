@@ -2,10 +2,9 @@ import curses
 import random
 
 def initialize_game(stdscr):
-    # Initialize colors
     curses.start_color()
-    curses.init_pair(1, curses.COLOR_RED, curses.COLOR_BLACK)  # Red text on black background (for food)
-    curses.init_pair(2, curses.COLOR_GREEN, curses.COLOR_BLACK)  # Green text on black background (for game over screen)
+    curses.init_pair(1, curses.COLOR_RED, curses.COLOR_BLACK)
+    curses.init_pair(2, curses.COLOR_GREEN, curses.COLOR_BLACK)
 
     # Initialize the screen
     curses.curs_set(0)
@@ -35,10 +34,10 @@ def initialize_game(stdscr):
 def game_over_screen(stdscr, score):
     sh, sw = stdscr.getmaxyx()
     stdscr.clear()
-    stdscr.addstr(sh // 2, sw // 2 - 5, "GAME OVER!", curses.color_pair(2))  # Green text
-    stdscr.addstr(sh // 2 + 1, sw // 2 - 7, f"Your Score: {score}", curses.color_pair(2))  # Green text
-    stdscr.addstr(sh // 2 + 3, sw // 2 - 10, "Press 'R' to Restart", curses.color_pair(2))  # Green text
-    stdscr.addstr(sh // 2 + 4, sw // 2 - 8, "Press 'Q' to Quit", curses.color_pair(2))  # Green text
+    stdscr.addstr(sh // 2, sw // 2 - 5, "GAME OVER!", curses.color_pair(2))
+    stdscr.addstr(sh // 2 + 1, sw // 2 - 7, f"Your Score: {score}", curses.color_pair(2))
+    stdscr.addstr(sh // 2 + 3, sw // 2 - 10, "Press 'R' to Restart", curses.color_pair(2))
+    stdscr.addstr(sh // 2 + 4, sw // 2 - 8, "Press 'Q' to Quit", curses.color_pair(2))
     stdscr.refresh()
 
 def main(stdscr):
@@ -99,7 +98,6 @@ def main(stdscr):
                 # Move the snake (remove the tail)
                 snake.pop()
 
-            # Clear the screen
             w.clear()
 
             # Draw the food
