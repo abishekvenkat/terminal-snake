@@ -2,8 +2,7 @@
 
 A classic Snake game implementation for the terminal, inspired by the old Nokia mobile game. Built with Python and the `curses` library.
 
-![Gameplay Demo](https://via.placeholder.com/600x400.png?text=Terminal+Snake+Game+Demo) 
-*(Replace with actual gameplay GIF)*
+![Gameplay Demo](/snake-screen.mp4)
 
 ## Features
 
@@ -21,15 +20,60 @@ A classic Snake game implementation for the terminal, inspired by the old Nokia 
 - Python 3.x
 - `curses` library (pre-installed with Python on Unix-based systems)
 
-**Note for Windows Users:**  
-The `curses` library is not natively supported on Windows. Consider using:
-- Windows Subsystem for Linux (WSL)
-- [Git Bash](https://gitforwindows.org/)
-- [Cygwin](https://www.cygwin.com/)
+> [!WARNING]
+> Windows Users:  
+> The `curses` library is not natively supported on Windows. Consider using:
+> - Windows Subsystem for Linux (WSL)
+> - [Git Bash](https://gitforwindows.org/)
+> - [Cygwin](https://www.cygwin.com/)
 
 ## Installation
 
 1. Clone the repository:
 ```bash
 git clone https://github.com/abishekvenkat/terminal-snake.git
-cd terminal-snake-game
+cd terminal-snake
+```
+2. Ensure Python 3 is installed:
+```bash
+python3 --version
+```
+
+## How to Play
+
+### Running the Game
+```bash
+python3 snake_game.py
+```
+### Controls
+↑ : Move Up
+
+↓ : Move Down
+
+← : Move Left
+
+→ : Move Right
+
+R : Restart after game over
+
+Q : Quit game
+
+### Gameplay
+- Guide the snake to eat the red food items (π)
+- Each food item increases your score and the snake's length
+- The snake speeds up progressively as your score increases
+- Avoid walls and self-collision
+- Game ends if you hit the walls or the snake's body
+- Press 'R' to restart or 'Q' to quit after game over
+
+## Known Issues/Limitations
+- Limited terminal compatibility (best experienced in Unix-based terminals)
+- Screen flicker during redraw (common in terminal games)
+- Performance may vary based on terminal emulator
+
+## License
+MIT License - see [LICENSE](\LICENSE) file for details
+
+## Acknowledgments
+- Inspired by the classic Nokia Snake game
+- Built with Python's `curses` library
