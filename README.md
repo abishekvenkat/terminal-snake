@@ -2,7 +2,7 @@
 
 A classic Snake game implementation for the terminal, inspired by the old Nokia mobile game. Built with Python and the `curses` library.
 
-![Gameplay Demo](https://github.com/user-attachments/assets/d43d930e-9694-4e0b-85e4-e691188c349d)
+https://github.com/user-attachments/assets/d43d930e-9694-4e0b-85e4-e691188c349d
 
 ## Features
 
